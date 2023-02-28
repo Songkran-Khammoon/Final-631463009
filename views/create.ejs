@@ -1,0 +1,20 @@
+<%- include("_header") -%>
+
+  <div class="container py-5 h-100">
+    <h1 class="text-center"> Create </h1>
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-12 col-lg-5 col-xl-5 ">
+        <form action="/create" method="post">
+
+          <%- include("_editor") -%>
+
+            <div class="d-flex justify-content-around align-items-center mb-4">
+              <!-- Submit button -->
+              <input type="submit" value="Create" class="btn btn-warning btn-lg btn-block" /> <a
+                href="/users">cancle</a>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <%- include("_footer") -%>
